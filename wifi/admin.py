@@ -11,3 +11,8 @@ admin.site.register(UserMain)
 @admin.register(Payments)
 class PaymentsAdmin(admin.ModelAdmin):
     actions = None
+    list_display = ("cust_id","pay_amount",)
+
+# @admin.register(Origin)
+# class OriginAdmin(admin.ModelAdmin):
+#     list_display = ("name",)
