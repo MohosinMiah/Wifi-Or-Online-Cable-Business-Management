@@ -1,0 +1,15 @@
+{% extends "admin/base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+        <img src="https://www.pythoncircle.com/media/uploads/motion-detection-20180819-a164d6e536a249f0804d98729774e4f9.jpeg" height="40px" />
+    </a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
